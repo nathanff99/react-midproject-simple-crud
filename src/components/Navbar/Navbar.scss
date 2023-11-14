@@ -1,0 +1,27 @@
+.navbar {
+    @apply bg-secondary flex items-center justify-between mt-0 2xl:mt-[-60px] duration-1000 p-2;
+
+    &__toggle {
+        @apply cursor-pointer flex p-2 rounded-md text-white text-xl;
+    }
+
+    &__list {
+        @apply flex items-center gap-2;
+
+        &-item {
+            @apply cursor-pointer flex p-2 text-white text-xl;
+
+            &--relative {
+                @apply relative;
+            }
+
+            &-indicator {
+                @apply absolute bg-red-400 w-2 h-2 right-1 top-1.5 rounded-xl;
+            }
+        }
+    }
+
+    &__avatar {
+        @apply px-2 cursor-pointer;
+    }
+}

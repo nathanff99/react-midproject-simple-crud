@@ -1,0 +1,35 @@
+.link-item {
+    @apply bg-gray-100 border-gray-300 lg:bg-white lg:border-white rounded-md;
+
+    &__cell {
+        @apply relative py-4 text-sm font-normal px-6 lg:hidden rounded-md;
+
+        &--primary {
+            @apply text-primary font-bold;
+        }
+
+        &-title {
+            @apply font-bold;
+        }
+
+        &-item {
+            @apply mt-3;
+
+            &--primary {
+                @apply text-primary font-bold;
+            }
+        }
+
+        &-description {
+            @apply font-normal text-gray-500 mt-1;
+        }
+
+        &--desktop {
+            @apply hidden sm:px-6 lg:table-cell;
+        }
+
+        &--options {
+            @apply lg:flex gap-1;
+        }
+    }
+}

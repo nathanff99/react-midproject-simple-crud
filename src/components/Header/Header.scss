@@ -1,0 +1,35 @@
+.header {
+    @apply flex items-center text-center md:text-left justify-center md:justify-between mb-8;
+
+    &--center {
+        @apply md:text-center 2xl:text-left md:justify-center sm:gap-[160px]
+    }
+
+    &__title {
+        @apply font-bold text-3xl;
+    }
+
+    &__subtitle {
+        @apply font-light text-xl text-gray-400;
+    }
+
+    &__icons {
+        @apply space-x-4 hidden 2xl:flex;
+
+        &-item {
+            @apply bg-gray-100 flex p-1.5 rounded-md text-xl cursor-pointer;
+
+            &--relative {
+                @apply relative;
+            }
+
+            &-badge {
+                @apply absolute bg-red-400 -top-1 -right-1 w-2 h-2 rounded-xl;
+            }
+        }
+    }
+
+    &__avatar {
+        @apply cursor-pointer;
+    }
+}

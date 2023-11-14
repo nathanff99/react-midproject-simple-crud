@@ -1,0 +1,43 @@
+.sidebar {
+  @apply fixed top-0 bottom-0 left-0 2xl:left-0 duration-1000 p-12 w-[320px] overflow-y-auto text-center bg-secondary shadow h-screen z-10;
+
+  &--closed {
+    @apply left-[-320px];
+  }
+
+  &__logo {
+    @apply p-2.5 mt-1 mb-8 flex items-center;
+
+    img {
+      @apply w-[30%];
+    }
+
+    &-text {
+      @apply font-semibold ml-2;
+    }
+  }
+
+  &__close-button {
+    @apply absolute cursor-pointer text-white 2xl:hidden left-5 top-5;
+  }
+
+  &__link {
+    @apply p-2.5 mt-2 flex items-center px-4 duration-300 cursor-pointer text-gray-400 hover:text-white;
+
+    &--active {
+      @apply text-white;
+    }
+
+    &-text {
+      @apply ml-4;
+    }
+  }
+
+  &__logout {
+    @apply absolute bottom-8 cursor-pointer duration-300 flex hover:text-white items-center px-4 text-gray-400;
+
+    &-text {
+      @apply ml-4;
+    }
+  }
+}

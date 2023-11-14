@@ -1,0 +1,19 @@
+.list {
+    @apply min-w-full border-separate lg:border-collapse;
+
+    &__header {
+        @apply bg-gray-100 border-gray-300 hidden lg:table-header-group;
+    }
+
+    &__cell {
+        @apply py-4 text-sm font-semibold sm:px-6 text-gray-500;
+
+        &--rounded-left {
+            @apply rounded-l-md;
+        }
+
+        &--rounded-right {
+            @apply rounded-r-md;
+        }
+    }
+}

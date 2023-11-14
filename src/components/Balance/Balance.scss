@@ -1,0 +1,7 @@
+.balance {
+    @apply flex flex-col rounded-xl p-6 justify-between;
+
+    &__value {
+        @apply text-3xl font-bold;
+    }
+}
